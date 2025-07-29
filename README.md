@@ -32,6 +32,7 @@ PicGo 本体支持如下图床：
 - `SM.MS V2` v2.3.0-beta.0
 - `阿里云 OSS` v1.6.0
 - `Imgur` v1.6.0
+- `SCP` v2.4.0-beta.10
 
 **本体不再增加默认的图床支持。你可以自行开发第三方图床插件。详见 [PicGo-Core](https://picgo.github.io/PicGo-Core-Doc/)**。
 

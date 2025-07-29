@@ -36,10 +36,38 @@ const config = {
           .clear()
           .add('main') // fix some modules will use browser target
           .add('module')
+        
+        // 排除二进制文件
+        config.externals({
+          'cpu-features': 'commonjs cpu-features',
+          'ssh2': 'commonjs ssh2'
+        })
       },
       builderOptions: {
         productName: 'PicGo',
         appId: 'com.molunerfinn.picgo',
+        extraResources: [
+          {
+            from: 'node_modules/ssh2',
+            to: 'node_modules/ssh2'
+          },
+          {
+            from: 'node_modules/asn1',
+            to: 'node_modules/asn1'
+          },
+          {
+            from: 'node_modules/bcrypt-pbkdf',
+            to: 'node_modules/bcrypt-pbkdf'
+          },
+          {
+            from: 'node_modules/safer-buffer',
+            to: 'node_modules/safer-buffer'
+          },
+          {
+            from: 'node_modules/tweetnacl',
+            to: 'node_modules/tweetnacl'
+          }
+        ],
         publish: [
           {
             provider: 'github',

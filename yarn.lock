@@ -2913,7 +2913,7 @@
   dependencies:
     "@types/express" "*"
 
-"@types/node@*", "@types/node@^14.6.2", "@types/node@^16.10.2":
+"@types/node@*", "@types/node@^14.6.2", "@types/node@^16.10.2", "@types/node@^18.11.18":
   version "16.11.18"
   resolved "https://registry.npmjs.org/@types/node/-/node-16.11.18.tgz#39ed7c52943b0cee6d7299b717707bd51b1f90b9"
   integrity sha512-7N8AOYWWYuw0g+K+GKCmIwfU1VMHcexYNpLPYzFZ4Uq2W6C/ptfeC7XhXgy/4pcwhz/9KoS5yijMfnYQ0u0Udw==
@@ -3007,6 +3007,13 @@
   integrity sha512-f0KEEe05NvUnat+boPTZ0dgaLZ4SfSouXUgv5noUiefG2ajgKjmETo9ZJyuqsl7dfl2aHlLJUiki6B4ZYldiiw==
   dependencies:
     "@types/node" "*"
+
+"@types/ssh2@^1.15.5":
+  version "1.15.5"
+  resolved "https://registry.npmmirror.com/@types/ssh2/-/ssh2-1.15.5.tgz#6d8f45db2f39519b8d9377268fa71ed77d969686"
+  integrity sha512-N1ASjp/nXH3ovBHddRJpli4ozpk6UdDYIX4RJWFa9L1YKnzdhTlVmiGHm4DZnj/jLbqZpes4aeR30EFGQtvhQQ==
+  dependencies:
+    "@types/node" "^18.11.18"
 
 "@types/through@*":
   version "0.0.30"
@@ -4063,6 +4070,13 @@ asar@^3.1.0:
   optionalDependencies:
     "@types/glob" "^7.1.1"
 
+asn1@^0.2.6:
+  version "0.2.6"
+  resolved "https://registry.npmmirror.com/asn1/-/asn1-0.2.6.tgz#0d3a7bb6e64e02a90c0303b31f292868ea09a08d"
+  integrity sha512-ix/FxPn0MDjeyJ7i/yoHGFt/EX6LyNbxSEhPPXODPL+KB0VPk86UYfL0lMdy+KCnv+fmvIzySwaK5COwqVbWTQ==
+  dependencies:
+    safer-buffer "~2.1.0"
+
 assert-plus@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/assert-plus/-/assert-plus-1.0.0.tgz#f12e0f3c5d77b0b1cdd9146942e4e96c1e4dd525"
@@ -4228,6 +4242,13 @@ batch@0.6.1:
   version "0.6.1"
   resolved "https://registry.npmjs.org/batch/-/batch-0.6.1.tgz#dc34314f4e679318093fc760272525f94bf25c16"
   integrity sha1-3DQxT05nkxgJP8dgJyUl+UvyXBY=
+
+bcrypt-pbkdf@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmmirror.com/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz#a4301d389b6a43f9b67ff3ca11a3f6637e360e9e"
+  integrity sha512-qeFIXtP4MSoi6NLqO12WfqARWWuCKi2Rn/9hJLEmtB5yTNr9DqFWkJRCf2qShWzPeAMRnOgCrq0sg/KLv5ES9w==
+  dependencies:
+    tweetnacl "^0.14.3"
 
 before@^0.0.1:
   version "0.0.1"
@@ -4445,6 +4466,11 @@ buffer@^5.1.0, buffer@^5.2.1, buffer@^5.5.0, buffer@^5.6.0:
   dependencies:
     base64-js "^1.3.1"
     ieee754 "^1.1.13"
+
+buildcheck@~0.0.6:
+  version "0.0.6"
+  resolved "https://registry.npmmirror.com/buildcheck/-/buildcheck-0.0.6.tgz#89aa6e417cfd1e2196e3f8fe915eb709d2fe4238"
+  integrity sha512-8f9ZJCUXyT1M35Jx7MkBgmBMo3oHTTBIPLiY9xyL0pl3T5RwcPEY8cUHr5LBNfu/fk6c2T4DJZuVM/8ZZT2D2A==
 
 builder-util-runtime@9.0.3:
   version "9.0.3"
@@ -5367,6 +5393,14 @@ cosmiconfig@^7, cosmiconfig@^7.0.0:
     parse-json "^5.0.0"
     path-type "^4.0.0"
     yaml "^1.10.0"
+
+cpu-features@~0.0.10:
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/cpu-features/-/cpu-features-0.0.10.tgz#9aae536db2710c7254d7ed67cb3cbc7d29ad79c5"
+  integrity sha512-9IkYqtX3YHPCzoVg1Py+o9057a3i0fp7S530UWokCSaFVTc7CwXPRiOjRjBQQ18ZCNafx78YfnG+HALxtVmOGA==
+  dependencies:
+    buildcheck "~0.0.6"
+    nan "^2.19.0"
 
 crc32@^0.2.2:
   version "0.2.2"
@@ -8752,6 +8786,15 @@ loader-utils@^2.0.0:
     emojis-list "^3.0.0"
     json5 "^2.1.2"
 
+loader-utils@^2.0.3:
+  version "2.0.4"
+  resolved "https://registry.npmmirror.com/loader-utils/-/loader-utils-2.0.4.tgz#8b5cb38b5c34a9a018ee1fc0e6a066d1dfcc528c"
+  integrity sha512-xXqpXoINfFhgua9xiqD8fPFHgkoq1mmmpE92WlDbm9rNRd/EbRb+Gqf908T2DMfuHjjJlksiK2RbHVOdD/MqSw==
+  dependencies:
+    big.js "^5.2.2"
+    emojis-list "^3.0.0"
+    json5 "^2.1.2"
+
 locate-path@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/locate-path/-/locate-path-2.0.0.tgz#2b568b265eec944c6d9c0de9c3dbbbca0354cd8e"
@@ -9398,6 +9441,11 @@ mz@^2.4.0, mz@^2.7.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
+nan@^2.19.0, nan@^2.20.0:
+  version "2.23.0"
+  resolved "https://registry.npmmirror.com/nan/-/nan-2.23.0.tgz#24aa4ddffcc37613a2d2935b97683c1ec96093c6"
+  integrity sha512-1UxuyYGdoQHcGg87Lkqm3FzefucTa0NAiOcuRsDmysep3c1LVCRK2krrUDafMWtjSG04htvAmvg96+SDknOmgQ==
+
 nanoid@^3.3.4, nanoid@^3.3.6:
   version "3.3.6"
   resolved "https://registry.npmmirror.com/nanoid/-/nanoid-3.3.6.tgz#443380c856d6e9f9824267d960b4236ad583ea4c"
@@ -9462,6 +9510,13 @@ node-forge@^1:
   version "1.3.1"
   resolved "https://registry.npmjs.org/node-forge/-/node-forge-1.3.1.tgz#be8da2af243b2417d5f646a770663a92b7e9ded3"
   integrity sha512-dPEtOeMvF9VMcYV/1Wb8CPoVAXtp6MKMlcbAt4ddqmGqUJ6fQZFXkNZNkNlfevtNkGtaSoXf/vNNNSvgrdXwtA==
+
+node-loader@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmmirror.com/node-loader/-/node-loader-2.1.0.tgz#8c4eb926e8bdcacb7349d17b40ebcc49fd2458d5"
+  integrity sha512-OwjPkyh8+7jW8DMd/iq71uU1Sspufr/C2+c3t0p08J3CrM9ApZ4U53xuisNrDXOHyGi5OYHgtfmmh+aK9zJA6g==
+  dependencies:
+    loader-utils "^2.0.3"
 
 node-releases@^2.0.1:
   version "2.0.1"
@@ -11093,7 +11148,7 @@ safe-buffer@5.2.1, safe-buffer@>=5.1.0, safe-buffer@^5.0.1, safe-buffer@^5.1.0, 
   resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
-"safer-buffer@>= 2.1.2 < 3", "safer-buffer@>= 2.1.2 < 3.0.0", safer-buffer@^2.1.2:
+"safer-buffer@>= 2.1.2 < 3", "safer-buffer@>= 2.1.2 < 3.0.0", safer-buffer@^2.1.2, safer-buffer@~2.1.0:
   version "2.1.2"
   resolved "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
@@ -11564,6 +11619,17 @@ sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
+
+ssh2@^1.16.0:
+  version "1.16.0"
+  resolved "https://registry.npmmirror.com/ssh2/-/ssh2-1.16.0.tgz#79221d40cbf4d03d07fe881149de0a9de928c9f0"
+  integrity sha512-r1X4KsBGedJqo7h8F5c4Ybpcr5RjyP+aWIG007uBPRjmdQWfEiVLzSK71Zji1B9sKxwaCvD8y8cwSkYrlLiRRg==
+  dependencies:
+    asn1 "^0.2.6"
+    bcrypt-pbkdf "^1.0.2"
+  optionalDependencies:
+    cpu-features "~0.0.10"
+    nan "^2.20.0"
 
 ssri@^8.0.1:
   version "8.0.1"
@@ -12207,6 +12273,11 @@ tunnel@^0.0.6:
   version "0.0.6"
   resolved "https://registry.npmjs.org/tunnel/-/tunnel-0.0.6.tgz#72f1314b34a5b192db012324df2cc587ca47f92c"
   integrity sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==
+
+tweetnacl@^0.14.3:
+  version "0.14.5"
+  resolved "https://registry.npmmirror.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
+  integrity sha512-KXXFFdAbFXY4geFIwoyNK+f5Z1b7swfXABfL7HXCmoIWMKU3dmS26672A4EeQtDzLKy7SXmfBu51JolvEKwtGA==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"

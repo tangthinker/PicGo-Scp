@@ -3,6 +3,7 @@ import pkg from 'root/package.json'
 import { PicGo } from 'picgo'
 import db from 'apis/core/datastore'
 import debounce from 'lodash/debounce'
+import scpUploader from '~/main/plugins/scp-uploader'
 
 const CONFIG_PATH = dbPathChecker()
 
@@ -13,6 +14,9 @@ picgo.saveConfig({
   debug: true,
   PICGO_ENV: 'GUI'
 })
+
+// 加载SCP插件
+scpUploader(picgo)
 
 global.PICGO_GUI_VERSION = pkg.version
 picgo.GUI_VERSION = global.PICGO_GUI_VERSION
